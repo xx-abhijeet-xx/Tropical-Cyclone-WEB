@@ -199,15 +199,21 @@ html,body{
 #page2>#img1{
     height: 40vh;
     width: 80vh;
-    border: 2px solid white;
+    border: 1px solid red;
     position: absolute;
     left: 50%;
     top: 70%;
     transform: translate(-50%,-50%);
-    background-image: url(http://www.bom.gov.au/cyclone/tropical-cyclone-knowledge-centre/understanding/tc-info/images/figure1.jpg);
-    background-size: cover;
-    background-position: center;
 }
+
+#page2>#img1>img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-position: center;
+}
+
+
 #page2>h2{
     position: absolute;
     bottom: 5%;
